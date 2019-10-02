@@ -1,0 +1,45 @@
+@font-face {
+	font-family: Liberation;
+	src: url(../Fonts/liberation-sans/LiberationSans-Regular.ttf);
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: Liberation;
+}
+.heading {
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 250%;
+}
+
+.topnav {
+	background-image: linear-gradient(#d3d3d3, #ffffff);
+	overflow: hidden;
+	text-align: center;
+	height: 100px;
+	padding: 10px 0px 50px;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+	background-color: #4caf50;
+	color: white;
+}
+
+#headerImg {
+	/* padding: 10px; */
+	width: 500px;
+	height: 80px;
+}
+
+#content{
+	padding: 30px 0px 0px;
+}
+
+.payButton{
+	text-align: center;
+	width: 250px;
+	height: 44px;
+}

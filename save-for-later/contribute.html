@@ -1,5 +1,138 @@
 <!DOCTYPE html>
 <html>
-	<head></head>
-	<body>This is the extension's Contribute page</body>
+	<head>
+		<title>Contribute - Save for Later</title>
+
+		<link rel="stylesheet" href="contribute.css" />
+		<link rel="stylesheet" href="../bootstrap_files/css/bootstrap.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="../assets/sfl.png" />
+	</head>
+
+	<body>
+		<div class="topnav">
+			<img
+				id="headerImg"
+				src="../assets/sflHeader.png"
+				width="500"
+				height="80"
+			/>
+		</div>
+		<div id="content">
+			<div class="jumbotron jumbotron-fluid">
+				<div class="container">
+					<h1 class="display-12" style="text-align: center">
+						<img src="../assets/heart.png" width="80" height="80" /><br />
+						Welcome to the contribute page of Save for Later
+					</h1>
+					<p class="lead" style="text-align: justify">
+						Thank you for choosing Save for Later, a simple web extension
+						to simplify managing and storing tabs. This page lists various
+						ways in which you could help contribute to your favourite
+						extension 😀. If you've enjoyed using Save for Later as much
+						as I've enjoyed creating it, you can contribute to it's
+						devlopment in any of the following ways.
+					</p>
+				</div>
+			</div>
+
+			<div class="card" style="width: auto; margin: 20px">
+				<div class="card-body">
+					<h2 class="card-title">Monetary support</h2>
+					<p class="card-text">
+						Support this project by providing monetary support. This helps
+						in further devlopment of the product and adding features to
+						make the extension even more functional helping more people in
+						the community.
+					</p>
+
+					<a
+						href="https://paypal.me/allenpht?locale.x=en_GB"
+						target="_blank"
+						><img
+							src="https://www.paypalobjects.com/webstatic/en_AU/i/buttons/btn_paywith_primary_l.png"
+							alt="Pay with PayPal"
+					/></a>
+					<div
+						class="btn btn-primary payButton"
+						onclick="qrDisplay('paytm')"
+					>
+						Scan QR Code with Paytm
+					</div>
+					<div
+						class="btn btn-primary payButton"
+						onclick="qrDisplay('bhim')"
+					>
+						Scan QR Code with BHIM
+					</div>
+				</div>
+				<div id="qrArea" style="margin: auto"></div>
+			</div>
+			<div class="card" style="width: auto; margin: 20px">
+				<div class="card-body">
+					<h2 class="card-title">Spread the love</h2>
+					<p class="card-text" style="text-align: justify">
+						Spread the good news by writing a review on<a
+							href="https://chrome.google.com/webstore/detail/save-for-later/nkphlkgkhmdaecflflapohlkkchmcacc"
+							target="_blank"
+							class="btn btn-link"
+							>Chrome web store</a
+						>
+						or<a
+							href="https://addons.mozilla.org/en-US/firefox/addon/save-for-later/"
+							target="_blank"
+							class="btn btn-link"
+							>Firefox Add-ons Store</a
+						>
+						helping those who need this extension find it easily. You can
+						also spread the word by sharing this extension with your
+						friends, family and co-workers. Know someone who could really
+						use this extension? You know the drill.
+					</p>
+				</div>
+			</div>
+			<div class="card" style="width: auto; margin: 20px">
+				<div class="card-body">
+					<h2 class="card-title">Contribute to the code</h2>
+					<p class="card-text">
+						So you're a coder huh? Help add new features dirctly to the
+						code by adding code to the public<a
+							href="https://github.com/allen505/save-for-later"
+							target="_blank"
+							class="btn btn-link"
+							><img
+								src="../assets/GitHub-Mark-120px-plus.png"
+								width="28px"
+								height="28px"
+							/>
+							Github repository</a
+						><br />
+						Found an issue? Report it on the repository's<a
+							href="https://github.com/allen505/save-for-later/issues"
+							target="_blank"
+							class="btn btn-link"
+							>issues page</a
+						>
+					</p>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function qrDisplay(provider) {
+				// console.log(provider)
+				let area = document.getElementById("qrArea");
+				var elem = document.createElement("img");
+				elem.setAttribute("width", "300");
+				elem.setAttribute("height", "274");
+				
+				if (provider == "paytm") {
+					elem.setAttribute("src", "../assets/paytm.png");					
+				}
+				else if(provider == "bhim"){
+					elem.setAttribute("src", "../assets/bhim.png");
+				}
+				area.innerHTML="";
+				area.appendChild(elem);
+			}
+		</script>
+	</body>
 </html>
