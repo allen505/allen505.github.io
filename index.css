@@ -1,0 +1,39 @@
+.profile-img {
+  width: 100%;
+}
+
+.navbar-right li a {
+  text-align: right;
+}
+
+.pos-top-trianlge-sep {
+  height: 80px;
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(49%, #00b8a9), color-stop(50%, #f8f3d4));
+  background-image: linear-gradient(to bottom right, #00b8a9 49%, #f8f3d4 50%);
+}
+
+.headings {
+  text-decoration: underline;
+  margin-bottom: 60px;
+}
+
+#allen {
+  font-size: 90px;
+}
+
+#intro {
+  background-color: #00b8a9;
+}
+
+#career {
+  background-color: #f8f3d4;
+}
+
+#experience {
+  background-color: #00b8a9;
+}
+
+#projects {
+  background-color: #00b8a9;
+}
+/*# sourceMappingURL=index.css.map */

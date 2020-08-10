@@ -1,42 +1,169 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Allen Abraham</title>
+    <meta charset="utf-8" />
+    <!-- <link rel="stylesheet" href="./bootstrap5/css/bootstrap.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
 
-<head>
-	<title>Allen Abraham</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="./bootstrap_files/css/bootstrap.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="index.css">
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/brand_icon.jpg"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="./bootstrap5/js/bootstrap.min.js"></script> -->
+  </head>
 
-	<link rel="shortcut icon" type="image/x-icon" href="assets/brand_icon.jpg" />
-	<script type='text/javascript' src='./jquery/dist/jquery.min.js'></script>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!--
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mt-2 mt-lg-0" id="navbarMenu">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0 navbar-right">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#experience"
+                >Experience</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    -->
+    <div class="container-fluid pt-1 px-5" id="intro">
+      <div class="row flex-column-reverse flex-lg-row">
+        <div class="col my-auto text-center text-lg-left">
+          <h1 id="allen">Allen <br />Abraham</h1>
+        </div>
+        <div class="col-sm-5 col-md-4 col-lg-3 mx-auto mb-2 mb-lg-0">
+          <img
+            class="shadow rounded-circle profile-img"
+            src="./assets/ProfileImage.jpg"
+            alt="Profile Image"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="pos-top-trianlge-sep"></div>
+    <div class="container-fluid pt-4 pb-5" id="career">
+      <p class="h4 col-10 col-md-8 mx-auto text-center">
+        Hi there, I'm Allen!<br />
+        I'm programmer with a strong focus on <br />
+        functional prgramming and machine learning.
+      </p>
+    </div>
 
-	<script>
-		$(document).ready(function () {
-			$("#qualiBtn").click(function () {
-				$('html, body').animate({
-					scrollTop: $("#quali").position().top
-				}, 800);
-			});
-			$("#contactBtn").click(function () {
-				$('html, body').animate({
-					scrollTop: $("#contact").offset().top
-				}, 800);
-			});
-			$("#homeBtn").click(function () {
-				$('html, body').animate({
-					scrollTop: $("#quote").position().top
-				}, 800);
-			});
-		});
-	</script>
+    <div class="container-fluid pt-1" id="experience">
+      <h1 class="display-4 headings text-center pt-3">Experience</h1>
+      <div class="row mx-auto justify-content-center">
+        <div class="col-12 col-lg-5 mb-2 mb-lg-0">
+          <div class="card shadow mx-auto">
+            <div class="card-header">
+              <h5 class="card-title">Project Collaborator</h5>
+              <h6 class="text-muted">
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-geo-alt"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                  />
+                </svg>
+                Creative Commons
+              </h6>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                Project Collaborator for CC Catalog Repository<br />
+                <i>June 2020 - Present</i>
+              </div>
+            </div>
+          </div>
+        </div>
 
-</head>
-
-<body>
-	
-
-</body>
-
+        <div class="col-12 col-lg-5 mb-2 mb-lg-0">
+          <div class="card shadow mx-auto">
+            <div class="card-header">
+              <h5 class="card-title">Deep learning Intern</h5>
+              <h6 class="text-muted">
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-geo-alt"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                  />
+                </svg>
+                e-Yantra, IIT Bombay
+              </h6>
+            </div>
+            <div class="card-body">
+              <div class="card-text">
+                Deep Learning on 3D Point Clouds, eYSIP-2020<br />
+                <i>May 2020 - July 2020</i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="pos-top-trianlge-sep"></div> -->
+    <div class="container-fluid" id="projects">
+      <h1 class="display-4 headings text-center">Projects</h1>
+    </div>
+    <div class="container-fluid" id="projects">
+      Sick Projects
+    </div>
+    <div
+      class="container-fluid"
+      id="contact"
+      style="height: 500px; border-style: solid; border-color: red;"
+    >
+      Ring me up
+    </div>
+    <!-- <div class="container-fluid"><div class="left-trianlge-sep"></div></div> -->
+  </body>
 </html>
