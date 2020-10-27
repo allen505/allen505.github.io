@@ -37,5 +37,6 @@
       -moz-osx-font-smoothing: grayscale;
     }
 
-.flaticon-university:before { content: "\f100"; }
+.flaticon-portfolio:before { content: "\f100"; }
 .flaticon-school:before { content: "\f101"; }
+.flaticon-medal:before { content: "\f102"; }

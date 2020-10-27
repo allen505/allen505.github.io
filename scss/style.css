@@ -10578,8 +10578,8 @@ body.menu-show {
 }
 
 a {
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   color: #3e64ff;
 }
 
@@ -10589,8 +10589,16 @@ a:hover, a:focus {
   outline: none !important;
 }
 
-h1, h2, h3, h4, h5,
-.h1, .h2, .h3, .h4, .h5 {
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
   line-height: 1.5;
   color: black;
   font-weight: 400;
@@ -10629,8 +10637,8 @@ h1, h2, h3, h4, h5,
 
 .ftco-navbar-light .navbar-brand {
   color: #000000;
-  padding-top: .7rem;
-  padding-bottom: .7rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 .ftco-navbar-light .navbar-brand:hover, .ftco-navbar-light .navbar-brand:focus {
@@ -10652,8 +10660,8 @@ h1, h2, h3, h4, h5,
 
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
   font-size: 16px;
-  padding-top: .7rem;
-  padding-bottom: .7rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
   padding-left: 20px;
   padding-right: 20px;
   color: #000000;
@@ -10707,8 +10715,8 @@ h1, h2, h3, h4, h5,
 .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
   color: #fff;
   border: 1px solid #3e64ff;
-  padding-top: .7rem;
-  padding-bottom: .7rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
   padding-left: 18px;
   padding-right: 18px;
   background: #3e64ff;
@@ -10756,7 +10764,7 @@ h1, h2, h3, h4, h5,
   padding-right: 0;
   text-transform: uppercase;
   font-size: 16px;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 
 .ftco-navbar-light .navbar-toggler:hover, .ftco-navbar-light .navbar-toggler:focus {
@@ -10798,7 +10806,7 @@ h1, h2, h3, h4, h5,
   background: #3e64ff;
   border: none !important;
   padding-top: 0.5rem !important;
-  padding-bottom: .5rem !important;
+  padding-bottom: 0.5rem !important;
   padding-left: 20px !important;
   padding-right: 20px !important;
   margin-top: 5px !important;
@@ -10831,7 +10839,7 @@ h1, h2, h3, h4, h5,
   cursor: pointer;
   text-transform: uppercase;
   font-size: 16px;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 
 .ftco-navbar-light.scrolled .nav-link {
@@ -10844,13 +10852,13 @@ h1, h2, h3, h4, h5,
 
 .ftco-navbar-light.scrolled.awake {
   margin-top: 0px;
-  -webkit-transition: .3s all ease-out;
-  transition: .3s all ease-out;
+  -webkit-transition: 0.3s all ease-out;
+  transition: 0.3s all ease-out;
 }
 
 .ftco-navbar-light.scrolled.sleep {
-  -webkit-transition: .3s all ease-out;
-  transition: .3s all ease-out;
+  -webkit-transition: 0.3s all ease-out;
+  transition: 0.3s all ease-out;
 }
 
 .ftco-navbar-light.scrolled .navbar-brand {
@@ -10873,7 +10881,7 @@ h1, h2, h3, h4, h5,
   left: -12px;
   width: 40px;
   height: 40px;
-  content: '';
+  content: "";
   background: #3e64ff;
   z-index: -1;
   -webkit-transform: translateY(-50%);
@@ -10899,8 +10907,8 @@ h1, h2, h3, h4, h5,
   left: 0;
   right: 0;
   bottom: 0;
-  content: '';
-  opacity: .1;
+  content: "";
+  opacity: 0.1;
   width: 50%;
   background: #3e64ff;
 }
@@ -11011,7 +11019,7 @@ h1, h2, h3, h4, h5,
   left: 0;
   right: 0;
   bottom: 0;
-  content: '';
+  content: "";
   background: #edf0ff;
   z-index: -1;
   -webkit-transform: rotate(45deg);
@@ -11268,7 +11276,7 @@ h1, h2, h3, h4, h5,
   left: -24px;
   width: 20px;
   height: 2px;
-  content: '';
+  content: "";
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background: #3e64ff;
@@ -11325,9 +11333,15 @@ h1, h2, h3, h4, h5,
   font-weight: 700;
 }
 
-.resume-wrap .position {
-  font-size: 18px;
+.resume-wrap a, .resume-wrap h3 {
+  color: #3e64ff;
+  font-size: 20px;
   font-weight: 700;
+}
+
+.resume-wrap .position {
+  font-size: 20px;
+  font-weight: 600;
   color: #000000;
 }
 
@@ -11361,7 +11375,7 @@ h1, h2, h3, h4, h5,
 
 .services-1 .icon i {
   font-size: 60px;
-  line-height: 1.0;
+  line-height: 1;
   color: #3e64ff;
 }
 
@@ -11380,7 +11394,7 @@ h1, h2, h3, h4, h5,
   bottom: -15px;
   left: 0;
   right: 0;
-  content: '';
+  content: "";
   width: 30px;
   height: 1px;
   background: #3e64ff;
@@ -11463,7 +11477,7 @@ h1, h2, h3, h4, h5,
   right: 0;
   width: 34px;
   height: 34px;
-  content: '';
+  content: "";
   background: #3e64ff;
   border-radius: 2px;
   opacity: 0;
@@ -11559,9 +11573,9 @@ h1, h2, h3, h4, h5,
   left: 0;
   right: 0;
   bottom: 0;
-  content: '';
+  content: "";
   background: #3e64ff;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .ftco-hireme h2 {
@@ -11631,7 +11645,7 @@ h1, h2, h3, h4, h5,
   left: 0;
   right: 0;
   bottom: 0;
-  content: '';
+  content: "";
   opacity: 0;
   background: #3e64ff;
   z-index: -1;
@@ -11641,7 +11655,7 @@ h1, h2, h3, h4, h5,
 
 @media (max-width: 767.98px) {
   .project .overlay {
-    opacity: .2;
+    opacity: 0.2;
   }
 }
 
@@ -11679,7 +11693,7 @@ h1, h2, h3, h4, h5,
 }
 
 .project:hover .overlay, .project:focus .overlay {
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .project:hover .text, .project:focus .text {
@@ -11695,7 +11709,7 @@ h1, h2, h3, h4, h5,
   top: 0;
   right: 100%;
   bottom: 0;
-  content: '';
+  content: "";
   width: 360%;
   background: #718dff;
 }
@@ -11789,7 +11803,7 @@ textarea.form-control {
 
 .ftco-footer .ftco-footer-logo {
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 
 .ftco-footer .ftco-footer-widget h2 {
@@ -12062,7 +12076,7 @@ textarea.form-control {
 .ftco-counter .ftco-label {
   font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 
 .block-20 {
@@ -12135,7 +12149,8 @@ textarea.form-control {
   padding: 0;
 }
 
-.block-23 ul li, .block-23 ul li > a {
+.block-23 ul li,
+.block-23 ul li > a {
   display: table;
   line-height: 1.5;
   margin-bottom: 15px;
@@ -12145,7 +12160,8 @@ textarea.form-control {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.block-23 ul li .icon, .block-23 ul li .text {
+.block-23 ul li .icon,
+.block-23 ul li .text {
   display: table-cell;
   vertical-align: top;
 }
@@ -12176,7 +12192,8 @@ textarea.form-control {
   font-weight: 400;
 }
 
-.block-27 ul li a, .block-27 ul li span {
+.block-27 ul li a,
+.block-27 ul li span {
   color: #a0f669;
   text-align: center;
   display: inline-block;
@@ -12187,7 +12204,8 @@ textarea.form-control {
   border: 1px solid #cccccc;
 }
 
-.block-27 ul li.active a, .block-27 ul li.active span {
+.block-27 ul li.active a,
+.block-27 ul li.active span {
   background: #a0f669;
   color: #fff;
   border: 1px solid transparent;
@@ -12308,7 +12326,7 @@ textarea.form-control {
   text-transform: uppercase;
   font-weight: bold;
   color: #fff;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 
 .post-info > div {
@@ -12318,7 +12336,7 @@ textarea.form-control {
 .post-info > div .seperator {
   display: inline-block;
   margin: 0 10px;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .tagcloud a {
@@ -12384,7 +12402,7 @@ textarea.form-control {
 .comment-list li .comment-body .meta {
   text-transform: uppercase;
   font-size: 13px;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   color: rgba(255, 255, 255, 0.3);
   color: #3e64ff;
   font-weight: 600;
@@ -12397,7 +12415,7 @@ textarea.form-control {
   color: #000000;
   text-transform: uppercase;
   font-size: 12px;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   font-weight: 600;
   border-radius: 4px;
 }
@@ -12443,41 +12461,49 @@ textarea.form-control {
   font-size: 20px;
 }
 
-.categories, .sidelink {
+.categories,
+.sidelink {
   padding: 0;
   margin: 0;
 }
 
-.categories li, .sidelink li {
+.categories li,
+.sidelink li {
   position: relative;
   margin-bottom: 10px;
   padding-bottom: 10px;
   list-style: none;
 }
 
-.categories li:last-child, .sidelink li:last-child {
+.categories li:last-child,
+.sidelink li:last-child {
   margin-bottom: 0;
   border-bottom: none;
   padding-bottom: 0;
 }
 
-.categories li a, .sidelink li a {
+.categories li a,
+.sidelink li a {
   display: block;
   color: #000000;
 }
 
-.categories li a span, .sidelink li a span {
+.categories li a span,
+.sidelink li a span {
   position: absolute;
   right: 0;
   top: 0;
   color: #3e64ff;
 }
 
-.categories li a:hover, .categories li a:focus, .sidelink li a:hover, .sidelink li a:focus {
+.categories li a:hover, .categories li a:focus,
+.sidelink li a:hover,
+.sidelink li a:focus {
   color: #3e64ff;
 }
 
-.categories li.active a, .sidelink li.active a {
+.categories li.active a,
+.sidelink li.active a {
   color: #000000;
   font-style: italic;
 }
@@ -12496,8 +12522,8 @@ textarea.form-control {
   border-radius: 16px;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity .2s ease-out, visibility 0s linear .2s;
-  transition: opacity .2s ease-out, visibility 0s linear .2s;
+  -webkit-transition: opacity 0.2s ease-out, visibility 0s linear 0.2s;
+  transition: opacity 0.2s ease-out, visibility 0s linear 0.2s;
   z-index: 1000;
 }
 
@@ -12516,8 +12542,8 @@ textarea.form-control {
 }
 
 #ftco-loader.show {
-  -webkit-transition: opacity .4s ease-out, visibility 0s linear 0s;
-  transition: opacity .4s ease-out, visibility 0s linear 0s;
+  -webkit-transition: opacity 0.4s ease-out, visibility 0s linear 0s;
+  transition: opacity 0.4s ease-out, visibility 0s linear 0s;
   visibility: visible;
   opacity: 1;
 }
