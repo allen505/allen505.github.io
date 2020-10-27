@@ -11333,7 +11333,8 @@ h5,
   font-weight: 700;
 }
 
-.resume-wrap a, .resume-wrap h3 {
+.resume-wrap a,
+.resume-wrap h3 {
   color: #3e64ff;
   font-size: 20px;
   font-weight: 700;
@@ -11387,6 +11388,7 @@ h5,
   text-transform: uppercase;
   position: relative;
   color: #000000;
+  margin-bottom: 10px;
 }
 
 .services-1 .desc h3:after {
@@ -11399,10 +11401,6 @@ h5,
   height: 1px;
   background: #3e64ff;
   margin: 0 auto;
-}
-
-.services-1 .desc h3 a {
-  color: #fff;
 }
 
 .services-1 .desc h4 {
@@ -11419,12 +11417,40 @@ h5,
   color: #3e64ff;
 }
 
+.services-1 .desc .tech-stack {
+  text-align: center;
+  padding: 0;
+}
+
+.services-1 .desc .view-proj {
+  border-radius: 5px;
+  background-color: white;
+  border-color: #3e64ff;
+}
+
+.services-1 .desc .view-proj:hover {
+  color: #4e71fd;
+  background-color: #000000;
+}
+
+.services-1 .desc ul {
+  margin: 25px;
+  padding: 0;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.7);
+}
+
 .services-1 .desc p {
   color: rgba(0, 0, 0, 0.7);
 }
 
 .services-1:hover {
-  background: #3e64ff;
+  background: #4e71fd;
+}
+
+.services-1:hover .view-proj {
+  border-width: 2px;
+  border-color: #000000;
 }
 
 .services-1:hover .icon i {
@@ -11797,7 +11823,7 @@ textarea.form-control {
 .ftco-footer {
   font-size: 16px;
   background: #000000;
-  padding: 7em 0;
+  padding: 0;
   z-index: 0;
 }
 

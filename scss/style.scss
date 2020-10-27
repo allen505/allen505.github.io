@@ -8,6 +8,7 @@ $black: #000000;
 $darken: #232931;
 
 $primary: #3e64ff;
+$primary-bg: #4e71fd;
 $secondary: #a0f669;
 
 @mixin border-radius($radius) {
@@ -767,7 +768,8 @@ h5,
     font-size: 24px;
     font-weight: 700;
   }
-  a, h3 {
+  a,
+  h3 {
     color: $primary;
     font-size: 20px;
     font-weight: 700;
@@ -817,6 +819,7 @@ h5,
       text-transform: uppercase;
       position: relative;
       color: $black;
+      margin-bottom: 10px;
       &:after {
         position: absolute;
         bottom: -15px;
@@ -827,9 +830,6 @@ h5,
         height: 1px;
         background: $primary;
         margin: 0 auto;
-      }
-      a {
-        color: $white;
       }
     }
     h4 {
@@ -844,12 +844,37 @@ h5,
       margin-bottom: 10px;
       color: $primary;
     }
+    .tech-stack {
+      text-align: center;
+      padding: 0;
+    }
+    .view-proj{
+      border-radius: 5px;
+      background-color: white;
+      border-color: $primary;
+    }
+    .view-proj:hover {
+      color: $primary-bg;
+      background-color: $black;
+      
+    }
+    ul {
+      margin: 25px;
+      padding: 0;
+      text-align: left;
+      color: rgba(0, 0, 0, 0.7);
+    }
     p {
       color: rgba(0, 0, 0, 0.7);
     }
+    
   }
   &:hover {
-    background: $primary;
+    background: $primary-bg;
+    .view-proj{
+      border-width: 2px;
+      border-color: $black;
+    }
     .icon {
       i {
         color: $white;
@@ -1188,7 +1213,7 @@ textarea.form-control {
 .ftco-footer {
   font-size: 16px;
   background: $black;
-  padding: 7em 0;
+  padding: 0;
   z-index: 0;
 
   .ftco-footer-logo {
