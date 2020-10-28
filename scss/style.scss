@@ -7,7 +7,7 @@ $white: #fff;
 $black: #000000;
 $darken: #232931;
 
-$primary: #A70AF7;
+$primary: #a70af7;
 $primary-bg: #b33bf0;
 $secondary: #a0f669;
 
@@ -447,8 +447,28 @@ h5,
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 120px;
+  bottom: 50px;
   z-index: 2;
+}
+@media screen and (min-width: 576px) {
+  .mouse {
+    bottom: 120px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mouse {
+    bottom: 150px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .mouse {
+    bottom: 150px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mouse {
+    bottom: 180px;
+  }
 }
 .mouse-icon {
   width: 70px;
@@ -777,8 +797,6 @@ h5,
   .position {
     font-size: 20px;
     font-weight: 600;
-    // letter-spacing: 3px;
-    // text-transform: uppercase;
     color: $black;
   }
 }
@@ -848,7 +866,7 @@ h5,
       text-align: center;
       padding: 0;
     }
-    .view-proj{
+    .view-proj {
       border-radius: 0px;
       background-color: white;
       border-color: $primary;
@@ -856,7 +874,6 @@ h5,
     .view-proj:hover {
       color: $primary-bg;
       background-color: $black;
-      
     }
     ul {
       margin: 25px;
@@ -867,11 +884,10 @@ h5,
     p {
       color: rgba(0, 0, 0, 0.7);
     }
-    
   }
   &:hover {
     background: $primary-bg;
-    .view-proj{
+    .view-proj {
       border-width: 2px;
       border-color: $black;
     }
@@ -1235,7 +1251,7 @@ textarea.form-control {
           color: rgba(44, 44, 44, 0.6);
           span {
             // color: $white;
-            color: rgba(87, 85, 85, 0.6)
+            color: rgba(87, 85, 85, 0.6);
           }
         }
       }
@@ -1243,7 +1259,7 @@ textarea.form-control {
     .btn-primary {
       background: $white !important;
       border: 2px solid $white !important;
-      
+
       &:hover {
         background: $white;
         border: 2px solid $white !important;
