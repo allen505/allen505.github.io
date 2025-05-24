@@ -9729,7 +9729,7 @@ h5,
   border-color: #a70af7;
 }
 .services-1 .desc .view-proj:hover {
-  color: #b33bf0;
+  color: #bf69eb;
   background-color: #000000;
 }
 .services-1 .desc ul {
@@ -9742,7 +9742,7 @@ h5,
   color: rgba(0, 0, 0, 0.7);
 }
 .services-1:hover {
-  background: #b33bf0;
+  background: #bf69eb;
 }
 .services-1:hover .view-proj {
   border-width: 2px;

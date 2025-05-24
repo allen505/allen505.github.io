@@ -49,6 +49,11 @@ $default-bold: 600;
   }
 }
 
+.skill-box:hover{
+  transform: translate(2px, -2px);
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 .5rem 1rem rgba(black, .15);
+}
 
 // a.no-color {
 //   color: rgb(0, 0, 0, 1.0);
