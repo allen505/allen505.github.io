@@ -302,6 +302,7 @@ var TxtRotate = function(el, toRotate, period) {
 TxtRotate.prototype.tick = function() {
   var i = this.loopNum % this.toRotate.length;
   var fullTxt = this.toRotate[i];
+  var typingSpeed = 175;
 
   if (this.isDeleting) {
     this.txt = fullTxt.substring(0, this.txt.length - 1);
@@ -312,7 +313,7 @@ TxtRotate.prototype.tick = function() {
   this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
   var that = this;
-  var delta = 300 - Math.random() * 100;
+  var delta = typingSpeed - Math.random() * 100;
 
   if (this.isDeleting) { delta /= 2; }
 

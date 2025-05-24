@@ -1,3 +1,5 @@
+@use "../bootstrap_files/css/bootstrap-grid";
+
 $default-bold: 600;
 
 .highlight {
@@ -13,6 +15,16 @@ $default-bold: 600;
 .resume-highlight a {
   display: inline;
 }
+
+.first-para {
+  @extend .mt-4;
+  @extend .mb-3;
+}
+
+.alt-para {
+  @extend .mb-3;
+}
+
 
 .circular-img {
   border-radius: 50%;

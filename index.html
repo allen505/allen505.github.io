@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-      <link rel="icon" type="image/x-icon" href="/assets/images/Portfolio/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/assets/images/Portfolio/favicon.png">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -56,11 +56,9 @@
                     <div class="text text-center">
                         <span class="subheading">Hey! I am</span>
                         <h1>Allen Abraham</h1>
-                        <h2>I'm a Software Engineer
-                            <!-- <span
-                            class="txt-rotate"
-                            data-period="1000"
-                            data-rotate='[ "Software Developer", "Data Engineer"]'></span> -->
+                        <h2>I'm a
+                            <span class="txt-rotate" data-period="1500"
+                                data-rotate='[ "Software Engineer", "Data Engineer", "Team Lead", "Software Developer", "Backend Engineer", "System Designer"]'></span>
                         </h2>
                     </div>
                 </div>
@@ -89,18 +87,19 @@
                         <div class="col-md-12 heading-section ftco-animate">
                             <h1 class="big">About</h1>
                             <h2 class="mb-4">About Me</h2>
-                            <p class="text-justify mb-4">Hey! I'm Allen, a highly motivated NYU Computer Science
-                                Master's graduate (<span class="highlight">GPA 3.96</span>) from New York University
+                            <p class="text-justify mb-4">Hey! I'm Allen, a highly motivated Computer Science
+                                Master's graduate (GPA 3.96) from <span class="highlight">New York University</span>
                                 with <span class="highlight">3 years of experience</span> in software and data
                                 engineering. I
-                                am adept in Python, Java, Haskell, and distributed systems, with a proven ability to
-                                optimize processes, develop scalable solutions, and lead high-impact projects.</p>
+                                am adept in Python, Java, Haskell, and <span class="highlight">distributed
+                                    systems</span>, with a proven ability to optimize processes, develop scalable
+                                solutions, and lead high-impact projects.</p>
                             <ul class="about-info mt-4 px-md-0 px-2">
                                 <li class="d-flex"><span>Name:</span> <span>Allen Abraham</span></li>
                                 </li>
                                 <li class="d-flex"><span>Address:</span> <span>New York, NY</span></li>
                                 <li class="d-flex" style="flex-wrap: wrap"><span>Email:</span> <span><a
-                                            href="mailto:allenabraham505@gmail.com">allen.a@nyu.edu</a></span></li>
+                                            href="mailto:allen.a@nyu.edu">allen.a@nyu.edu</a></span></li>
                                 <li class="d-flex"><span>Github:</span> <a href="https://www.github.com/allen505"
                                         target="_blank">github.com/allen505</a></li>
                                 <li class="d-flex"><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/allenab"
@@ -110,7 +109,8 @@
                     </div>
                     <div class="counter-wrap ftco-animate d-flex mt-md-3">
                         <div class="text">
-                            <p><a href="./Resume.pdf" class="btn btn-primary py-3 px-3" target="_blank">View Resume</a>
+                            <p><a href="./assets/Resume.pdf" class="btn btn-primary py-3 px-3" target="_blank">View
+                                    Resume</a>
                             </p>
                         </div>
                     </div>
@@ -184,12 +184,12 @@
                                 <span class="resume-highlight">
                                     <a href="https://firebird-music.com/" target="_blank">Firebird Music</a></span>, New
                                 York
-                                <p class="text-justify mb-4">As a Data Engineer at Firebird, I developed an <span
-                                        class="highlight">Airflow
-                                        DAG</span> to incrementally load data from an <span class="highlight">S3
-                                        bucket</span> into partitioned <span class="highlight">BigQuery tables</span>,
-                                    which resulted in a 99.8% reduction in ingestion time and an annual saving of $10K
-                                    by eliminating full table refreshes. Additionally, I utilized the <span
+                                <p class="text-justify first-para">As a Data Engineer at Firebird, I developed an <span
+                                        class="highlight">Airflow DAG</span> to incrementally load data from an <span
+                                        class="highlight">S3 bucket</span> into partitioned <span
+                                        class="highlight">BigQuery tables</span>, which resulted in a 99.8% reduction in
+                                    ingestion time and an annual saving of <span class="highlight">$10K</span> by
+                                    eliminating full table refreshes. Additionally, I utilized the <span
                                         class="highlight">GPT-Vision API</span> to analyze and interpret social media
                                     images for over 50,000 artists, identifying key engagement trends that directly
                                     informed the marketing team's content strategy and provided actionable insights for
@@ -208,29 +208,30 @@
                                 <h2>Software Engineer</h2>
                                 <span class="resume-highlight">
                                     <a href="https://juspay.in/" target="_blank">Juspay</a></span>, Bangalore, India
-                                <p class="text-justify mb-4">During my time as a Software Engineer at Juspay, I
-                                    significantly contributed to
-                                    optimizing a gateway scoring service by implementing algorithms, which boosted
-                                    customer success rates by <span class="highlight">up to 30%</span>.</p>
+                                <p class="text-justify first-para">During my time as a Software Engineer at Juspay, I
+                                    significantly contributed to optimizing our gateway scoring service by implementing
+                                    algorithms, which boosted customer success rates by <span class="highlight">up to
+                                        30%</span>.</p>
 
-                                <p class="text-justify mb-4">I took ownership of the refunds vertical, scaling its
+                                <p class="text-justify alt-para">I took ownership of the refunds vertical, scaling its
                                     processing capabilities to over
-                                    <span class="highlight">1 million transactions</span> (median 5,000 INR) by
-                                    introducing a Redis-based distributed producer-consumer workflow, refund sub-status
-                                    tracking, and unified HTTP error handling.
+                                    <span class="highlight">1 million transactions</span> (median transaction value:
+                                    ₹5,000) by introducing a Redis-based distributed producer-consumer workflow, refund
+                                    sub-status tracking, and unified HTTP error handling.
                                 </p>
 
-                                <p class="text-justify mb-4">My work included building <span
+                                <p class="text-justify alt-para">My work included building <span
                                         class="highlight">Prometheus and ClickHouse
                                         dashboards</span> for real-time metric analysis, which ensured a 98% refund
                                     success rate and <span class="highlight">99.999% uptime</span>, drastically reducing
                                     incident response times and informing cross-functional product architecture
                                     improvements. I led backend development in <span class="highlight">Haskell and
                                         Groovy</span> for new refund features and gateway integrations, actively
-                                    mentoring new team members, and successfully migrated code from JavaScript to
+                                    mentoring new team members, and successfully migrated code from
+                                    Purescript(Javascript) to
                                     Haskell, resulting in a <span class="highlight">95% cost reduction</span>.</p>
 
-                                <p class="text-justify mb-4">Additinally, I designed and maintained a <span
+                                <p class="text-justify alt-para">Additinally, I designed and maintained a <span
                                         class="highlight">microservices-based
                                         distributed system</span> capable of processing over 100 million daily
                                     transactions, implementing fault-tolerance patterns and load balancing strategies to
@@ -250,15 +251,15 @@
                                 <h2>Research Intern</h2>
                                 <span class="resume-highlight">
                                     <a href="http://www.iitb.ac.in/" target="_blank">IIT Bombay</a></span>
-                                <p class="text-justify mb-4">During my internship at IIT Bombay, I researched and
+                                <p class="text-justify first-para">During my internship at IIT Bombay, I researched and
                                     implemented <span class="highlight">deep learning</span> techniques for <span
                                         class="highlight">3D
                                         point cloud segmentation</span> using <span class="highlight">TensorFlow</span>.
                                     This work, which utilized the <span class="highlight">TF Core API</span>, enhanced
-                                    the accuracy and efficiency of complex geometric analyses. I trained the model on
+                                    the accuracy and efficiency of complex geometric analyses. We trained the model on
                                     the ROSE-X dataset, achieving an accuracy of <span class="highlight">92%</span>.
                                     This model was subsequently used to count the number of leaves and calculate the
-                                    Leaf Index Area.
+                                    Leaf Index Area for a given plant.
                                 </p>
                             </div>
                         </div>
@@ -277,13 +278,13 @@
                                 <span class="resume-highlight">
                                     <a href="https://www.ymcasv.org/ymca-camp-campbell/outdoor-education/cabin-leaders/"
                                         target="_blank">YMCA Camp Campbell, California</a></span>
-                                <p class="text-justify mb-4">
+                                <p class="text-justify first-para">
                                     As a Site Leader for the <span class="highlight">NYU Alternative Breaks</span>
                                     program, I spearheaded a trip to Camp Campbell in California, where I was
                                     responsible for organizing the itinerary and leading reflection activities for the
-                                    NYU group. At Camp Campbell, my co-leader and I took charge of our cabin, the
-                                    Raccoon cabin, overseeing daily activities, ensuring the well-being and safety of
-                                    our campers, and facilitating a positive and engaging experience.
+                                    NYU cohort. At <span class="highlight">Camp Campbell</span>, my co-leader and I led
+                                    our cabin (go Raccoon cabin!!), overseeing daily activities, ensuring the well-being
+                                    and safety of our campers, and facilitating a positive and engaging experience.
                                 </p>
                             </div>
                         </div>
@@ -300,8 +301,11 @@
                                 <span class="resume-highlight">
                                     <a href="https://www.godslovewedeliver.org/" target="_blank">God's Love We
                                         Deliver</a></span>, New York
-                                <p class="text-justify mb-4">
-                                    As a member of <span class="highlight">NYU's Give Where You Live</span> Cohort, I volunteered at God's Love We Deliver. In my role as an Individual Volunteer, I assisted in preparing and delivering nutritious meals to individuals in need.
+                                <p class="text-justify first-para">
+                                    As a member of <span class="highlight">NYU's Give Where You Live</span> Cohort, I
+                                    volunteered at <span class="highlight">God's Love We Deliver</span>. In my role as
+                                    an Individual Volunteer, I assisted in preparing and delivering nutritious meals to
+                                    individuals in need.
                                 </p>
                             </div>
                         </div>
@@ -309,15 +313,16 @@
                         <div class="resume-wrap d-flex ftco-animate">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <a href="https://creativecommons.org/" target="_blank"><img
-                                        src="assets/images/Portfolio/logos/creativeCommons.png" alt="Creative Commons Logo"
-                                        class="img-fluid circular-img"></a>
+                                        src="assets/images/Portfolio/logos/creativeCommons.png"
+                                        alt="Creative Commons Logo" class="img-fluid circular-img"></a>
                             </div>
                             <div class="text pl-3">
                                 <span class="date">Jun, 2020 - Mar, 2022</span>
                                 <h2>Project Collaborator</h2>
                                 <span class="resume-highlight">
                                     <a href="https://creativecommons.org/" target="_blank">Creative Commons</a></span>
-                                <p class="text-justify mb-4"> I was a Project Collaborator for the CC Catalog
+                                <p class="text-justify first-para"> I was a <span class="highlight">Project
+                                        Collaborator</span> for the CC Catalog
                                     repository, where I helped build a
                                     community of active contributors and maintain the repository. I made a significant
                                     contribution by integrating <span class="highlight">30 million images</span> from
@@ -419,16 +424,24 @@
                         <h2 class="heading">Achievements</h2>
                         <div class="resume-wrap d-flex ftco-animate">
                             <div class="icon d-flex align-items-center justify-content-center">
-                                <a href="https://chromewebstore.google.com/detail/save-for-later/nkphlkgkhmdaecflflapohlkkchmcacc" target="_blank"><img
-                                        src="assets/images/Portfolio/logos/sfl.png" alt="Save For Later Logo"
-                                        class="img-fluid circular-img"></a>
+                                <a href="https://chromewebstore.google.com/detail/save-for-later/nkphlkgkhmdaecflflapohlkkchmcacc"
+                                    target="_blank"><img src="assets/images/Portfolio/logos/sfl.png"
+                                        alt="Save For Later Logo" class="img-fluid circular-img"></a>
                             </div>
                             <div class="text pl-3">
-                                <h2>Mainter of Save For Later</h2>
+                                <h2>Maintainer of Save For Later</h2>
                                 <span class="position">
-                                    <a class="no-color" href="https://chromewebstore.google.com/detail/save-for-later/nkphlkgkhmdaecflflapohlkkchmcacc" target="_blank">Chrome Web Store</a></span>
-                                <p class="text-justify mb-4">
-                                    I independently created, contributed to, and currently maintain an <span class="highlight">open-sourced</span> Google Chrome extension called Save for Later. This web extension, designed for both Chrome and Firefox, allows users to save all tabs in their current window for later use. It has achieved significant success, boasting over <span class="highlight">15.1k all-time installations</span> and maintaining an impressive <span class="highlight">4.8-star</span> average rating.
+                                    <a class="no-color"
+                                        href="https://chromewebstore.google.com/detail/save-for-later/nkphlkgkhmdaecflflapohlkkchmcacc"
+                                        target="_blank">Chrome Web Store</a></span>
+                                <p class="text-justify first-para">
+                                    I independently created, contributed to, and currently maintain an <span
+                                        class="highlight">open-sourced</span> Google Chrome extension called Save for
+                                    Later. This web extension, designed for both Chrome and Firefox, allows users to
+                                    save all tabs in their current window for later use. It has achieved significant
+                                    success, boasting over <span class="highlight">15.1k all-time installations</span>
+                                    and maintaining an impressive <span class="highlight">4.8-star</span> average
+                                    rating.
                                 </p>
                             </div>
                         </div>
@@ -442,8 +455,9 @@
                                 <span class="date">Apr, 2021</span>
                                 <h2>Winners of eYRC (MHRD funded)</h2>
                                 <span class="position">eYantra (IIT Bombay)</span>
-                                <p class="text-justify mb-4"><span class="highlight">Led</span> our robotics team to
-                                    <span class="highlight">1st place</span> among 1,050 teams in a national
+                                <p class="text-justify first-para"><span class="highlight">Led</span> our robotics team
+                                    to
+                                    <span class="highlight">1st place among 1,050 teams</span> in a national
                                     competition, integrating real-time technology, maze traversal algorithms, image
                                     recognition, robotics design, electronics, and machine learning.
                                 </p>
@@ -458,7 +472,7 @@
                                 <span class="date">Apr, 2019</span>
                                 <h2>Core Committee member for Cipher Fest</h2>
                                 <span class="position">CSE Dept, SJB Institute of Technology</span>
-                                <p class="text-justify mb-4">As a core committee member for my undergraduate
+                                <p class="text-justify first-para">As a core committee member for my undergraduate
                                     department's annual tech fest, I played a crucial role in its successful execution.
                                     My responsibilities included the <span class="highlight">end-to-end
                                         organization</span> and management of two major <span class="highlight">quiz
@@ -481,7 +495,7 @@
                 <div class="col-md-12 heading-section text-center ftco-animate">
                     <h1 class="big big-2">Projects</h1>
                     <h2 class="mb-4">Projects</h2>
-                    <p>Here are some of the projects I made</p>
+                    <p>Here are some of the projects I've worked on</p>
                 </div>
             </div>
             <div class="row">
@@ -492,7 +506,8 @@
                             <input type="button" class="view-proj btn  mt-1 mb-2 mx-3"
                                 onclick="window.open('https://github.com/allen505/save-for-later','_blank')"
                                 value="View on github" />
-                            <p>An open-sourced Chrome/Firefox web extension for saving tabs, with over 15.1k installations and a 4.8-star average rating.
+                            <p>An open-sourced Chrome/Firefox web extension for saving tabs, with over 15.1k
+                                installations and a 4.8-star average rating.
                             </p>
                             <div class="tech-stack">
                                 <ul>
@@ -511,7 +526,8 @@
                             <input type="button" class="view-proj btn  mt-1 mb-2 mx-3"
                                 onclick="window.open('https://github.com/allen505/bigDataProj','_blank')"
                                 value="View on github" />
-                            <p> A scalable Big Data pipeline enabling real-time video streaming and large-scale data analysis
+                            <p> A scalable Big Data pipeline enabling real-time video streaming and large-scale data
+                                analysis
                             </p>
                             <div class="tech-stack">
                                 <ul>
@@ -537,7 +553,7 @@
                             </p>
                             <div class="tech-stack">
                                 <ul>
-                                    <li>Golang</li>
+                                    <li>Go (Golang)</li>
                                     <li>REST APIs</li>
                                     <li>Concurrency</li>
                                 </ul>
@@ -628,41 +644,45 @@
             <div class="row d-flex contact-info mb-5">
                 <div class="col-md-6 col-lg-4 d-flex ftco-animate">
                     <div class="align-self-stretch box text-center p-4 shadow">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="icon-envelope"></span>
-                        </div>
-                        <div>
-                            <h3 class="mb-4">Email Address</h3>
-                            <a href="mailto:allen.a@nyu.edu" target="_blank">
+                        <a href="mailto:allen.a@nyu.edu" target="_blank">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="icon-envelope"></span>
+                            </div>
+                            <div>
+                                <h3 class="mb-4">Email Address</h3>
                                 <p>allen.a@nyu.edu</p>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4 d-flex ftco-animate">
                     <div class="align-self-stretch box text-center p-4 shadow">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="icon-github"></span>
-                        </div>
-                        <div>
-                            <h3 class="mb-4">Github</h3>
-                            <p><a href="https://www.github.com/allen505/" target="_blank">github.com/allen505/</a></p>
-                        </div>
+                        <a href="https://www.github.com/allen505/" target="_blank">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="icon-github"></span>
+                            </div>
+                            <div>
+                                <h3 class="mb-4">Github</h3>
+                                <p>github.com/allen505</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-4 d-flex ftco-animate">
                     <div class="align-self-stretch box text-center p-4 shadow">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="icon-linkedin"></span>
-                        </div>
-                        <div>
-                            <h3 class="mb-4">LinkedIn</h3>
-                            <p><a href="https://www.linkedin.com/in/allenab/"
-                                    target="_blank">linkedin.com/in/allenab/</a></p>
-                        </div>
+                        <a href="https://www.linkedin.com/in/allenab/" target="_blank">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="icon-linkedin"></span>
+                            </div>
+                            <div>
+                                <h3 class="mb-4">LinkedIn</h3>
+                                <p>linkedin.com/in/allenab/</p>
+                            </div>
+                        </a>
                     </div>
+
                 </div>
             </div>
 
