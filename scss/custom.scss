@@ -1,0 +1,21 @@
+$default-bold: 600;
+
+.highlight {
+  font-weight: $default-bold;
+}
+
+.resume-highlight {
+  font-weight: $default-bold;
+  color: #A70AF7;
+}
+
+.resume-highlight a {
+  display: inline;
+}
+
+.circular-img {
+  border-radius: 50%;
+  object-fit: contain;
+  width: 200px;
+  height: 200px;
+}

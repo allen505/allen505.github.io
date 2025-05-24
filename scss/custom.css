@@ -1,0 +1,21 @@
+.highlight {
+  font-weight: 600;
+}
+
+.resume-highlight {
+  font-weight: 600;
+  color: #A70AF7;
+}
+
+.resume-highlight a {
+  display: inline;
+}
+
+.circular-img {
+  border-radius: 50%;
+  object-fit: contain;
+  width: 200px;
+  height: 200px;
+}
+
+/*# sourceMappingURL=custom.css.map */
