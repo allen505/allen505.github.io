@@ -23,7 +23,7 @@ The site uses a specific color scheme defined in its stylesheets. When adding ne
 **Example Variable Structure (Recommended):**
 ```css
 :root {
-  --primary-color: #A70AF7; /* Example accent color */
+  --primary-color: #2563eb; /* Example accent color */
   --text-color: #333333;
   --bg-color-light: #ffffff;
   --bg-color-dark: #f8f9fa;

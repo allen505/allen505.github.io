@@ -20,7 +20,9 @@ $darken: #1a1a1d; // Slightly lighter dark for contrast
 $primary: #2563eb; 
 $primary-bg: #3b82f6;
 $primary-bg-light: #60a5fa;
-$secondary: #8b5cf6; 
+$secondary: #3b82f6; 
+$success: #10b981; 
+$danger: #ef4444; 
 
 // --- THEME 2: NEON PURPLE (Original) ---
 // $primary: #a70af7;
@@ -1230,6 +1232,46 @@ textarea.form-control {
   visibility: hidden;
 }
 
+.ftco-animated {
+  visibility: visible !important;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translate3d(-40px, 0, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+.fadeInLeft { animation-name: fadeInLeft; }
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translate3d(40px, 0, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+.fadeInRight { animation-name: fadeInRight; }
+
 .bg-primary {
   background: $primary !important;
 }
@@ -1959,7 +2001,7 @@ textarea.form-control {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(18, 18, 18, 0.9);
   box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.24);
   border-radius: 16px;
   opacity: 0;
@@ -1975,7 +2017,7 @@ textarea.form-control {
   width: 100%;
   height: 100%;
   transform: none;
-  background-color: #fff;
+  background-color: #121212;
   border-radius: 0;
   box-shadow: none;
 }

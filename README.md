@@ -18,9 +18,9 @@ This repository contains the source code for my personal portfolio website, show
 The portfolio is built using standard, reliable web technologies for high performance and compatibility:
 - **HTML5**: For semantic page structure.
 - **CSS3 / SCSS**: For styling and responsive design.
-- **JavaScript (Vanilla & jQuery)**: For interactivity, animations, and DOM manipulation.
-- **Bootstrap 4**: For responsive grid layout and UI components.
-- **Plugins**: Includes libraries like Owl Carousel (sliders), Magnific Popup (modals), AOS (Animate On Scroll), and more.
+- **JavaScript (Vanilla)**: For interactivity, animations, and DOM manipulation.
+- **Bootstrap 5**: For responsive grid layout and UI components.
+- **Plugins**: Powered purely by modern Vanilla JavaScript and native Bootstrap 5 components.
 
 ## AI Interaction Guidelines
 
