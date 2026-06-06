@@ -4,12 +4,15 @@ $default-bold: 600;
 
 .highlight {
   font-weight: $default-bold;
-  color: #7e7e7e;
+  color: #ffffff;
+  // background: rgba(37, 99, 235, 0.2); // Subtle blue background
+  // padding: 0 4px;
+  // border-radius: 4px;
 }
 
 .resume-highlight {
   font-weight: $default-bold;
-  color: #A70AF7;
+  color: #2563eb; // Electric Blue
 }
 
 .resume-highlight a {
@@ -47,15 +50,9 @@ $default-bold: 600;
       }
     }
   }
-}
 
-.skill-box:hover{
-  transform: translate(2px, -2px);
-  transition: transform 0.2s ease-in-out;
-  box-shadow: 0 .5rem 1rem rgba(black, .15);
+  // Disable text justification on mobile for better readability
+  .text-justify {
+    text-align: left !important;
+  }
 }
-
-// a.no-color {
-//   color: rgb(0, 0, 0, 1.0);
-//   text-decoration: underline;
-// }

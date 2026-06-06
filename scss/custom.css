@@ -3699,12 +3699,12 @@ html {
 
 .highlight {
   font-weight: 600;
-  color: #7e7e7e;
+  color: #ffffff;
 }
 
 .resume-highlight {
   font-weight: 600;
-  color: #A70AF7;
+  color: #2563eb;
 }
 
 .resume-highlight a {
@@ -3729,11 +3729,9 @@ html {
     background-position: center;
     background-repeat: no-repeat;
   }
-}
-.skill-box:hover {
-  transform: translate(2px, -2px);
-  transition: transform 0.2s ease-in-out;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  .text-justify {
+    text-align: left !important;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */

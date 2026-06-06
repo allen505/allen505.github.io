@@ -1,16 +1,32 @@
+@use "sass:color";
+
 @import "bootstrap/bootstrap";
 @import "bootstrap/variables";
 
 $font-primary: "Poppins", Arial, sans-serif;
 
-$white: #fff;
-$black: #000000;
-$darken: #232931;
+// ==========================================
+// 2026 THEME CONFIGURATION (DARK MODE DEFAULT)
+// ==========================================
 
-$primary: #a70af7;
-$primary-bg: #b33bf0;
-$primary-bg-light: #bf69eb;
-$secondary: #a0f669;
+// Global Colors
+$white: #121212; // Reversing standard light background to dark
+$black: #e0e0e0; // Reversing dark text to light
+$darken: #1a1a1d; // Slightly lighter dark for contrast
+
+// 🎨 To switch themes, comment out the active theme and uncomment the desired one.
+
+// --- THEME 1: ELECTRIC BLUE (Active) ---
+$primary: #2563eb; 
+$primary-bg: #3b82f6;
+$primary-bg-light: #60a5fa;
+$secondary: #8b5cf6; 
+
+// --- THEME 2: NEON PURPLE (Original) ---
+// $primary: #a70af7;
+// $primary-bg: #b33bf0;
+// $primary-bg-light: #bf69eb;
+// $secondary: #00f0ff;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -36,7 +52,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
-  color: lighten($black, 60%);
+  color: rgba(255, 255, 255, 0.75);
   &.menu-show {
     overflow: hidden;
     position: fixed;
@@ -65,7 +81,7 @@ h5,
 .h4,
 .h5 {
   line-height: 1.5;
-  color: rgba(0, 0, 0, 1);
+  color: $black;
   font-weight: 400;
 }
 
@@ -490,7 +506,7 @@ h5,
     right: 0;
     bottom: 0;
     content: "";
-    background: lighten($primary, 34.3%);
+    background: color.adjust($primary, $lightness: 34.3%, $space: hsl);
     z-index: -1;
     transform: rotate(45deg);
   }
@@ -764,11 +780,24 @@ h5,
 .resume-wrap {
   width: 100%;
   margin-bottom: 30px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 20px 40px 20px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(37, 99, 235, 0.2) !important; // Subtler blue glimmer
+    border-color: $primary;
+  }
   .icon {
     width: 75px;
     height: 75px;
+    background-color: #ffffff;
     // border: 2px solid $primary;
     padding: 3px;
     @include border-radius(50%);
@@ -818,8 +847,19 @@ h5,
 .services-1 {
   margin-bottom: 40px;
   padding: 2em;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
   width: 100%;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(37, 99, 235, 0.2) !important; // Subtler blue glimmer
+    border-color: $primary;
+  }
   .icon {
     display: block;
     margin-bottom: 30px;
@@ -880,10 +920,10 @@ h5,
       margin: 25px;
       padding: 0;
       text-align: left;
-      color: rgba(0, 0, 0, 0.7);
+      color: rgba(255, 255, 255, 0.7);
     }
     p {
-      color: rgba(0, 0, 0, 0.7);
+      color: rgba(255, 255, 255, 0.7);
     }
   }
   &:hover {
@@ -920,7 +960,7 @@ h5,
 .progress {
   height: 10px;
   box-shadow: none;
-  background: lighten($black, 90%);
+  background: color.adjust($black, $lightness: 90%, $space: hsl);
   overflow: visible;
 }
 .progress-bar {
@@ -1141,7 +1181,7 @@ h5,
 
 // USEFUL CODE
 .aside-stretch {
-  background: lighten($primary, 10%);
+  background: color.adjust($primary, $lightness: 10%, $space: hsl);
   &:after {
     position: absolute;
     top: 0;
@@ -1149,7 +1189,7 @@ h5,
     bottom: 0;
     content: "";
     width: 360%;
-    background: lighten($primary, 10%);
+    background: color.adjust($primary, $lightness: 10%, $space: hsl);
     // background: #333644;
   }
   @include media-breakpoint-down(sm) {
@@ -1615,7 +1655,7 @@ textarea.form-control {
         height: 40px;
         line-height: 40px;
         border-radius: 50%;
-        border: 1px solid lighten($black, 80%);
+        border: 1px solid color.adjust($black, $lightness: 80%, $space: hsl);
       }
       &.active {
         a,
@@ -1633,7 +1673,7 @@ textarea.form-control {
   .contact-info {
     p {
       a {
-        color: lighten($black, 10%);
+        color: color.adjust($black, $lightness: 10%, $space: hsl);
       }
       span {
       }
@@ -1731,7 +1771,7 @@ textarea.form-control {
         display: inline-block;
         margin-right: 5px;
         a {
-          color: lighten($black, 30%);
+          color: color.adjust($black, $lightness: 30%, $space: hsl);
           font-size: 12px;
           text-transform: uppercase;
           letter-spacing: 1px;
@@ -1831,7 +1871,7 @@ textarea.form-control {
         border-radius: 4px;
         &:hover {
           color: $white;
-          background: lighten($black, 0%);
+          background: color.adjust($black, $lightness: 0%, $space: hsl);
         }
       }
     }
@@ -1980,5 +2020,20 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
+  }
+}
+
+.skill-box {
+  background: rgba(255, 255, 255, 0.03) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(37, 99, 235, 0.2) !important; // Subtler blue glimmer
+    border-color: $primary;
   }
 }
