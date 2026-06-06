@@ -16,7 +16,7 @@
         if (loader) {
             loader.classList.remove('show');
         }
-    }, 1);
+    }, 500);
 
     // 3. Burger Menu
     const navToggles = document.querySelectorAll('.js-fh5co-nav-toggle');
