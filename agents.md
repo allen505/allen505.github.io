@@ -10,7 +10,7 @@ This document provides context, constraints, and instructions for any AI assista
 
 ## Nature of Updates
 
-- The general structure of the website is relatively stable.
+- The general structure of the website is relatively stable
 - Most updates requested by the user will be to **add or modify information** such as:
   - New work experiences
   - New projects
